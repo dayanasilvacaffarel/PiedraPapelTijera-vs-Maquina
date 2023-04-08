@@ -23,7 +23,7 @@ function pedirJugada() {
     console.log(eleccion);
     console.log("----------------------------");
 
-    // finalmente devolvemos el valor de la eleccion
+    // finalmente devolvemos el valor de la eleccion--LO NECESITO PARA COMPARAR!!
     return eleccion;
 }
 
@@ -43,8 +43,6 @@ function jugadaRandom() {
     return numero;
 }
 
-
-
 /* -------------------------------------------------------------------------- */
 /*                                  FUNCION 4                                 */
 /* -------------------------------------------------------------------------- */
@@ -53,7 +51,6 @@ function jugadaRandom() {
 
 function compararJugadas() {
     const RESULTADOS_POSIBLES = ['¡Genial, ganaste!', 'Esto fue un empate.', 'Una lástima, perdiste.'];
-
     const eleccionJugador = pedirJugada();
     const eleccionComputadora = jugadaRandom();
 
@@ -73,7 +70,7 @@ function compararJugadas() {
     return resultadoRonda;
 }
 
-const resultadoDePartida = compararJugadas()
+const resultadoDePartida = compararJugadas() //🚩🚩🚩QUE PASA SI NO GUARDO resultadoDePartida EN UN CONST????
 /* -------------------------------------------------------------------------- */
 /*                          CONSIGNA MESA DE TRABAJO                          */
 /* -------------------------------------------------------------------------- */
@@ -81,6 +78,20 @@ const resultadoDePartida = compararJugadas()
 // 2- La función debe mostrar por consola el resultado de la partida.
 // 3- A su vez debe mostrar al usuario una alerta con el resutado de la partida.
 // 4- Finalmente, si el resultado fue una derrota debe mostrarle al usuario un mensaje de aliento para desearle suerte en la próxima oportunidad.
+
+function mensaje(resultadoDePartida){
+
+    alert(resultadoDePartida);
+    
+    if (resultadoDePartida == 'Una lástima, perdiste.') {
+        alert("Suerte en la próxima")
+    }
+
+    return resultadoDePartida;
+}
+
+console.log(mensaje(resultadoDePartida));
+
 
 
 

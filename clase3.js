@@ -1,6 +1,7 @@
 // Tenemos varias funciones a disposicion en nuestro programa.
 // Debemos reutilizarlas y acomodar nuestro juego para que el mismo sea al mejor de 3 partidas.
-// Esto significa que el primero que gane 2 partidas va ser el ganador. Con lo cual pueden repetirse varias rondas hasta que esto suceda.
+// Esto significa que el primero que gane 2 partidas va ser el ganador. Con lo cual pueden repetirse varias 
+//rondas hasta que esto suceda.
 
 // Listemos las funciones para recordarlo mejor
 // FUNCION 1: iniciarJuego()
@@ -24,7 +25,6 @@ const nombreJugador = iniciarJuego();
 
 // 👇 mientras ninguno haya llegado a 2 puntos seguimos jugando
 while (puntajes.usuario < 2 && puntajes.computadora < 2) {
-
 
     const resultadoDePartida = compararJugadas()
     alert(resultadoDePartida);

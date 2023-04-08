@@ -5,10 +5,16 @@ function iniciarJuego() {
 
     // suludamos al usuario
     alert("Bienvenido al piedra papel o tijera de Frontend II.");
-    // guardamos en una variable en nombre ingresado
-    const nombre = prompt("Ingese su nombre por favor:")
 
-    alert("Gracias por jugar " + nombre + ". ¡Mucha suerte!");
+    // guardamos en una variable en nombre ingresado
+    let nombre; 
+    do {
+
+    nombre = prompt("Ingese su nombre por favor:");
+        
+    } while (nombre.length<3 || !isNaN(nombre));
+
+    alert("Gracias por jugar " + nombre.toUpperCase()  + ". ¡Mucha suerte!");
 
     // mostramos los datos por consola
     console.log("----------------------------");
@@ -30,3 +36,4 @@ const nombreJugador = iniciarJuego();
 // 3- Finalmente el nombre devuelto debe estar todo en mayúsculas.
 
 
+// usar do while
